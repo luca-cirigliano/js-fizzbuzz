@@ -23,14 +23,18 @@ for (let i = 1; i <= 100; i++) {
     if (i % 3 === 0 && i % 5 === 0) {
         console.log('FizzBuzz')
         divEl.append('Fizzbuzz')
+        divEl.style.backgroundColor='green'
         /* - per i multipli di 3 stampi “Fizz” al posto del numero */
     } else if (i % 3 === 0) {
         console.log('Fizz');
         divEl.append('Fizz')
+        divEl.style.backgroundColor='antiquewhite'
+        divEl.style.color='black'
         /* - per i multipli di 5 stampi “Bizz” al posto del numero */
     } else if (i % 5 === 0) {
         console.log('Buzz')
         divEl.append('Buzz')
+        divEl.style.backgroundColor='red'
     }else{
         console.log(i)
         divEl.append(i)
